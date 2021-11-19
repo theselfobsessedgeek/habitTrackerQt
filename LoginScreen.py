@@ -16,12 +16,13 @@ class LoginScreen(QDialog):
         password = self.passwordFeild.text()
         det = auth.Auth.login(username, password)
         if det[0]==True:
-            self._output = det[1]   #returns the NAME of the user
-            # print(self._output)
+            self._output1 = det[1]  #returns the NAME of the user 
+            self._output2 = det[2]    #returns the UID of the user
             self.accept()
         else:
-            print(det[1])
-            self.reject()
+            self.error.setText('Invalid email or password')
 
-    def getOutput(self):
-        return self._output
+    def getOutput1(self):
+        return self._output1
+    def getOutput2(self):
+        return self._output2

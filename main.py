@@ -20,9 +20,7 @@ class WelcomScreen(QDialog):
         widget.setCurrentIndex(widget.currentIndex()+1)
 
         if login.exec_()==QDialog.Accepted:
-            name = login.getOutput()
-            dash = Dashboard(name)
-            
+            dash = Dashboard(login.getOutput1(),login.getOutput2())
             widget.addWidget(dash)
             widget.setCurrentIndex(widget.currentIndex()+1)
 
@@ -44,3 +42,4 @@ try:
     sys.exit(app.exec_())
 except:
     print("EXITed")
+    

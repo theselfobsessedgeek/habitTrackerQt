@@ -162,8 +162,8 @@ font: 20px;</string>
    <widget class="QLabel" name="error">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>560</y>
+      <x>320</x>
+      <y>540</y>
       <width>161</width>
       <height>20</height>
      </rect>

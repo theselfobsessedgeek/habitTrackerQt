@@ -24,7 +24,7 @@ class Ui_Dialog(object):
 "}")
         self.bgwidget.setObjectName("bgwidget")
         self.label = QtWidgets.QLabel(self.bgwidget)
-        self.label.setGeometry(QtCore.QRect(340, 80, 181, 41))
+        self.label.setGeometry(QtCore.QRect(200, 100, 461, 41))
         self.label.setStyleSheet("color : white ;\n"
 "font: 40pt \"Ubuntu\";")
         self.label.setObjectName("label")
@@ -62,7 +62,7 @@ class Ui_Dialog(object):
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
-        self.label.setText(_translate("Dialog", "Welcome"))
+        self.label.setText(_translate("Dialog", "Welcome...Build a habbit"))
         self.label_2.setText(_translate("Dialog", "Sign in or Create an account"))
         self.login.setText(_translate("Dialog", "Log In"))
         self.signUp.setText(_translate("Dialog", "Sign Up"))

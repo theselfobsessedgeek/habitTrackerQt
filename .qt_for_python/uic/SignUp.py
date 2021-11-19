@@ -70,7 +70,7 @@ class Ui_Dialog(object):
 "font: 20px;")
         self.label_4.setObjectName("label_4")
         self.error = QtWidgets.QLabel(self.bgwidget)
-        self.error.setGeometry(QtCore.QRect(360, 560, 161, 20))
+        self.error.setGeometry(QtCore.QRect(320, 540, 161, 20))
         self.error.setStyleSheet("color:rgb(255, 0, 0)")
         self.error.setText("")
         self.error.setObjectName("error")
